@@ -30,7 +30,7 @@ description = "WebプログラマtalebuのWebサイトです。"
 
 [[params.menu]]
   name = "posts"
-  url = "post/"
+  url = "posts/"
 
 
 [privacy]

@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date: 2023-03-27T12:11:46+09:00
-draft: true
+draft: false
 ---
 これまでに開発したものから一部を紹介します。
 
