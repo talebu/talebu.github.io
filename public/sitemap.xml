@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.example.com/about/</loc>
+    <lastmod>2023-03-27T12:11:07+09:00</lastmod>
+  </url><url>
+    <loc>https://www.example.com/categories/</loc>
+  </url><url>
+    <loc>https://www.example.com/series/</loc>
+  </url><url>
+    <loc>https://www.example.com/tags/</loc>
+  </url><url>
+    <loc>https://www.example.com/</loc>
+  </url>
+</urlset>
