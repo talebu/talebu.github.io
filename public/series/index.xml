@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on talebuのWebサイト</title>
-    <link>talebu.netlify.app/series/</link>
+    <link>talebu.github.io/series/</link>
     <description>Recent content in Series on talebuのWebサイト</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>©2023 &lt;a href=&#39;https://twitter.com/talebujp&#39;&gt;@talebujp&lt;/a&gt;.</copyright><atom:link href="talebu.netlify.app/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>©2023 &lt;a href=&#39;https://twitter.com/talebujp&#39;&gt;@talebujp&lt;/a&gt;.</copyright><atom:link href="talebu.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

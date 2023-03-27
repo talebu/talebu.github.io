@@ -2,18 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>talebu.netlify.app/projects/</loc>
+    <loc>talebu.github.io/posts/</loc>
+    <lastmod>2023-03-27T15:59:35+09:00</lastmod>
+  </url><url>
+    <loc>talebu.github.io/</loc>
+    <lastmod>2023-03-27T15:59:35+09:00</lastmod>
+  </url><url>
+    <loc>talebu.github.io/posts/release-this-site/</loc>
+    <lastmod>2023-03-27T15:59:35+09:00</lastmod>
+  </url><url>
+    <loc>talebu.github.io/projects/</loc>
     <lastmod>2023-03-27T12:11:46+09:00</lastmod>
   </url><url>
-    <loc>talebu.netlify.app/about/</loc>
+    <loc>talebu.github.io/about/</loc>
     <lastmod>2023-03-27T12:11:07+09:00</lastmod>
   </url><url>
-    <loc>talebu.netlify.app/categories/</loc>
+    <loc>talebu.github.io/categories/</loc>
   </url><url>
-    <loc>talebu.netlify.app/series/</loc>
+    <loc>talebu.github.io/series/</loc>
   </url><url>
-    <loc>talebu.netlify.app/tags/</loc>
-  </url><url>
-    <loc>talebu.netlify.app/</loc>
+    <loc>talebu.github.io/tags/</loc>
   </url>
 </urlset>

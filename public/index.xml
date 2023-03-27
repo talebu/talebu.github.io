@@ -2,17 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>talebuのWebサイト</title>
-    <link>talebu.netlify.app/</link>
+    <link>talebu.github.io/</link>
     <description>Recent content on talebuのWebサイト</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>©2023 &lt;a href=&#39;https://twitter.com/talebujp&#39;&gt;@talebujp&lt;/a&gt;.</copyright><atom:link href="talebu.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>©2023 &lt;a href=&#39;https://twitter.com/talebujp&#39;&gt;@talebujp&lt;/a&gt;.</copyright>
+    <lastBuildDate>Mon, 27 Mar 2023 15:59:35 +0900</lastBuildDate><atom:link href="talebu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>サイトを開設しました</title>
+      <link>talebu.github.io/posts/release-this-site/</link>
+      <pubDate>Mon, 27 Mar 2023 15:59:35 +0900</pubDate>
+      
+      <guid>talebu.github.io/posts/release-this-site/</guid>
+      <description>このサイトでは、私タレブに関するお知らせを更新していきます。</description>
+    </item>
+    
     <item>
       <title>Projects</title>
-      <link>talebu.netlify.app/projects/</link>
+      <link>talebu.github.io/projects/</link>
       <pubDate>Mon, 27 Mar 2023 12:11:46 +0900</pubDate>
       
-      <guid>talebu.netlify.app/projects/</guid>
+      <guid>talebu.github.io/projects/</guid>
       <description>これまでに開発したものから一部を紹介します。
 Games
 Flee Paris [link]: Unityで作ったAndroid用ゲームアプリ。Adnroidデバイスをお持ちの方はリンクからapkファイルをダウンロードして遊んでみてください。 </description>
@@ -20,10 +30,10 @@ Flee Paris [link]: Unityで作ったAndroid用ゲームアプリ。Adnroidデバ
     
     <item>
       <title>About</title>
-      <link>talebu.netlify.app/about/</link>
+      <link>talebu.github.io/about/</link>
       <pubDate>Mon, 27 Mar 2023 12:11:07 +0900</pubDate>
       
-      <guid>talebu.netlify.app/about/</guid>
+      <guid>talebu.github.io/about/</guid>
       <description>2017年よりプログラマとして活動しているタレブと申します。
 現在はフリーランスとしてWeb開発をメインに活動しております。
 お問い合わせはこちらまで。</description>
