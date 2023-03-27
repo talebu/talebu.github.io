@@ -4,7 +4,7 @@ theme ="hugo-theme-basic"
 languageCode = "ja"
 googleAnalytics = "G-SKQ9FJBTWW"
 enableEmoji = false
-copyright = "©2023 <a href='https://twitter.com/talebujp' target='_blank'>@talebujp</a>."
+copyright = "© 2023 <a href='https://twitter.com/talebujp' target='_blank'>@talebujp</a>."
 description = "WebプログラマtalebuのWebサイトです。"
 
 [taxonomies]
