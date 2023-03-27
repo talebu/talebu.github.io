@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.example.com/about/</loc>
+    <loc>talebu.netlify.app/about/</loc>
     <lastmod>2023-03-27T12:11:07+09:00</lastmod>
   </url><url>
-    <loc>https://www.example.com/categories/</loc>
+    <loc>talebu.netlify.app/categories/</loc>
   </url><url>
-    <loc>https://www.example.com/series/</loc>
+    <loc>talebu.netlify.app/series/</loc>
   </url><url>
-    <loc>https://www.example.com/tags/</loc>
+    <loc>talebu.netlify.app/tags/</loc>
   </url><url>
-    <loc>https://www.example.com/</loc>
+    <loc>talebu.netlify.app/</loc>
   </url>
 </urlset>
