@@ -1,11 +1,11 @@
 baseURL = "https://www.example.com/"
-title = "Hugo Theme Basic"
+title = "talebuのWebサイト"
 theme ="hugo-theme-basic"
 languageCode = "ja"
 googleAnalytics = "UA-XXXXXXXXX-X"
-enableEmoji = true 
-copyright = "© 2016-19 <a href='https://github.com/siegerts/hugo-theme-basic'>Hugo Theme Basic</a>. Made by <a href='https://twitter.com/siegerts'>@siegerts</a>."
-description = "Basic personal site theme styled with minimal tachyons, syntax highlighting, and blog series configuration."
+enableEmoji = false
+copyright = "© 2023 <a href='https://twitter.com/talebujp'>@talebujp</a>."
+description = "WebプログラマtalebuのWebサイトです。"
 
 [taxonomies]
   category = "categories"
@@ -15,24 +15,23 @@ description = "Basic personal site theme styled with minimal tachyons, syntax hi
 [params]
   titleEmoji = ":tada:"
   # change this!
-  twitter = "siegerts"
+  twitter = "talebujp"
 
 [Permalinks]
   post = "post/:slug"
-
-[[params.menu]]
-  name = "blog"
-  url = "post/"
-
-[[params.menu]]
-  name = "post series"
-  url = "series/"
   
-
 [[params.menu]]
   name = "about"
   url = "about/"
-  
+
+[[params.menu]]
+  name = "projects"
+  url = "projects/"
+
+[[params.menu]]
+  name = "posts"
+  url = "post/"
+
 
 [privacy]
   [privacy.googleAnalytics]
