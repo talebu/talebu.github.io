@@ -6,7 +6,18 @@
     <description>Recent content on talebuのWebサイト</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>© 2023 &lt;a href=&#39;https://twitter.com/talebujp&#39;&gt;@talebujp&lt;/a&gt;.</copyright><atom:link href="talebu.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>©2023 &lt;a href=&#39;https://twitter.com/talebujp&#39;&gt;@talebujp&lt;/a&gt;.</copyright><atom:link href="talebu.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>talebu.netlify.app/projects/</link>
+      <pubDate>Mon, 27 Mar 2023 12:11:46 +0900</pubDate>
+      
+      <guid>talebu.netlify.app/projects/</guid>
+      <description>これまでに開発したものから一部を紹介します。
+Games
+Flee Paris [link]: Unityで作ったAndroid用ゲームアプリ。Adnroidデバイスをお持ちの方はリンクからapkファイルをダウンロードして遊んでみてください。 </description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>talebu.netlify.app/about/</link>
