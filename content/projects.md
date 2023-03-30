@@ -5,5 +5,8 @@ draft: false
 ---
 これまでに開発したものから一部を紹介します。
 
+*Tools"
+- ***ダッシュボード*** [[link]](/dashboard_demo): Angularで作ったダッシュボードアプリ。
+
 *Games*
 - ***Flee Paris*** [[link]](/Flee_Paris.apk): Unityで作ったAndroid用ゲームアプリ。Adnroidデバイスをお持ちの方はリンクからapkファイルをダウンロードして遊んでみてください。
