@@ -9,10 +9,10 @@ draft: false
 - ***タスク管理ダッシュボード*** [[demo]](/dashboard_demo)
     - Webのダッシュボードアプリ
     - 利用技術: Angular
-    - データの可視化なども可能です
+    - グラフによるデータの可視化なども可能です
 
 *ゲーム*
-- ***Flee Paris*** [[file]](/Flee_Paris.apk)
-    - Android用ゲームアプリ
+- ***Flee Paris（逃げパリ）*** [[file]](/Flee_Paris.apk)
+    - Android用ゲームアプリ。警官に見つかってはいけません
     - 利用技術: Unity
-    - Adnroidデバイスをお持ちの方はリンクからapkファイルをダウンロードして遊んでみてください
+    - Adnroidデバイスでリンクからapkファイルをダウンロードして遊んでみてください
