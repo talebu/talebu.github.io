@@ -15,4 +15,4 @@ draft: false
 - ***Flee Paris（逃げパリ）*** [[file]](/Flee_Paris.apk)
     - Android用ゲームアプリ。警官に見つかってはいけません
     - 利用技術: Unity
-    - Adnroidデバイスでリンクからapkファイルをダウンロードして遊んでみてください
+    - リンクからapkファイル（92MB）をダウンロードして遊んでみてください
