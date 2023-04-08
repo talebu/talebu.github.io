@@ -24,9 +24,9 @@
       
       <guid>talebu.github.io/projects/</guid>
       <description>これまでに開発したものから一部を紹介します。
-*Tools&amp;quot;
-ダッシュボード [link]: Angularで作ったダッシュボードアプリ。 Games
-Flee Paris [link]: Unityで作ったAndroid用ゲームアプリ。Adnroidデバイスをお持ちの方はリンクからapkファイルをダウンロードして遊んでみてください。 </description>
+ツール
+タスク管理ダッシュボード [demo] Webのダッシュボードアプリ 利用技術: Angular グラフによるデータの可視化なども可能です ゲーム
+Flee Paris（逃げパリ） [file] Android用ゲームアプリ。警官に見つかってはいけません 利用技術: Unity リンクからapkファイル（92MB）をダウンロードして遊んでみてください </description>
     </item>
     
     <item>

@@ -21,10 +21,6 @@ description = "WebプログラマtalebuのWebサイトです。"
   post = "post/:slug"
   
 [[params.menu]]
-  name = "about"
-  url = "about/"
-
-[[params.menu]]
   name = "projects"
   url = "projects/"
 
