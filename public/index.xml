@@ -29,16 +29,5 @@
 Flee Paris（逃げパリ） [file] Android用ゲームアプリ。警官に見つかってはいけません 利用技術: Unity リンクからapkファイル（92MB）をダウンロードして遊んでみてください </description>
     </item>
     
-    <item>
-      <title>About</title>
-      <link>talebu.github.io/about/</link>
-      <pubDate>Mon, 27 Mar 2023 12:11:07 +0900</pubDate>
-      
-      <guid>talebu.github.io/about/</guid>
-      <description>2017年よりプログラマとして活動しているタレブと申します。
-現在はフリーランスとしてWeb開発をメインに活動しております。
-お問い合わせはこちらまで。</description>
-    </item>
-    
   </channel>
 </rss>
