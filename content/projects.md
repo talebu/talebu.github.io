@@ -9,7 +9,7 @@ draft: false
 - ***自動定期リマインド用LINEボット***
     - LINE Messaging APIを利用した、LINE上でのリマインダー
     - 部署や家族間での定期リマインドの自動化が可能です
-    - 利用技術: Python, AWS Lambda
+    - 利用技術: Python, AWS Lambda, Amazon EventBridge
 
 - ***タスク管理ダッシュボード*** [[url]](/dashboard_demo)
     - Webのダッシュボードアプリ
