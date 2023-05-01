@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="ja"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="スプレッドシートを更新すると自動でDiscordに通知が飛ぶ仕組み" />
+<meta property="og:site_name" content="talebuのWebサイト" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="talebu.github.io/posts/gas-discord-integration/" />
+<meta property="og:locale" content="ja" />
+<meta property="article:published_time" content="2023-05-01
+" /> <meta property="article:modified_time" content="2023-05-01
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@talebujp" />
+<meta name="twitter:creator" content="@talebujp" />
+<meta
+  name="twitter:title"
+  content="スプレッドシートを更新すると自動でDiscordに通知が飛ぶ仕組み | talebuのWebサイト"
+/>
+<meta
+  name="twitter:description"
+  content="Googleスプレッドシートで更新を行うとDiscordのチャンネルに通知が飛ぶ仕組みを紹介します。
+この例では、C列に「相談中」または「回答済」と入力することが通知を飛ばす条件です。
+条件の部分は適宜変更する必要があります。
+1. 更新通知を飛ばしたいDiscordのサーバでWebhookを作成 こちらを参考に。
+2. 更新を行うスプレッドシートのGASで以下のスクリプトを作成して保存 function onCellValueChange(e) { const url = &#39;https://docs.google.com/spreadsheets/YOUR-SPREADSHEETSURL&#39;; // 条件 if (e.range.getColumn() === 3) { if (e.value === &#34;相談中&#34;) { postMessageToDiscord(`🎾 相談を追加しました。\n ${url}`); } else if (e.value === &#34;回答済&#34;) { postMessageToDiscord(`🏉 回答を入力しました。\n ${url}`); } } } function postMessageToDiscord(message) { // WebhookURLを設定する const discordUrl = &#39;https://discord.com/api/webhooks/YOUR-DISCORD-SERVER_WEBHOOK-URL&#39;; const payload = JSON.stringify({content: message}); const params = { headers: { &#39;Content-Type&#39;: &#39;application/json&#39; }, method: &#34;POST&#34;, payload: payload, muteHttpExceptions: true }; const response = UrlFetchApp.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="talebu.github.io/posts/gas-discord-integration/" />
+
+
+
+    <title>スプレッドシートを更新すると自動でDiscordに通知が飛ぶ仕組み</title>
+    <link rel="canonical" href="talebu.github.io/posts/gas-discord-integration/" />
+
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="talebu.github.iocss/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'G-SKQ9FJBTWW', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon-32x32.png?v=2" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+
+
+<body
+  lang="ja"
+  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <a
+    href="talebu.github.io"
+    class="b bb bw1 pb1 no-underline black"
+    >talebuのWebサイト</a
+  >
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">スプレッドシートを更新すると自動でDiscordに通知が飛ぶ仕組み</h1>
+
+    <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+      <p>Googleスプレッドシートで更新を行うとDiscordのチャンネルに通知が飛ぶ仕組みを紹介します。</p>
+<p>この例では、C列に「相談中」または「回答済」と入力することが通知を飛ばす条件です。</p>
+<p>条件の部分は適宜変更する必要があります。</p>
+<h3 id="1-更新通知を飛ばしたいdiscordのサーバでwebhookを作成">1. 更新通知を飛ばしたいDiscordのサーバでWebhookを作成</h3>
+<p><a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks">こちら</a>を参考に。</p>
+<h3 id="2-更新を行うスプレッドシートのgasで以下のスクリプトを作成して保存">2. 更新を行うスプレッドシートのGASで以下のスクリプトを作成して保存</h3>
+<pre tabindex="0"><code>function onCellValueChange(e) {
+  const url = &#39;https://docs.google.com/spreadsheets/YOUR-SPREADSHEETSURL&#39;;
+  // 条件
+  if (e.range.getColumn() === 3) {
+    if (e.value === &#34;相談中&#34;) {
+      postMessageToDiscord(`🎾 相談を追加しました。\n ${url}`);
+    } else if (e.value === &#34;回答済&#34;) {
+      postMessageToDiscord(`🏉 回答を入力しました。\n ${url}`);
+    }
+  }
+}
+
+function postMessageToDiscord(message) {
+
+  // WebhookURLを設定する
+  const discordUrl = &#39;https://discord.com/api/webhooks/YOUR-DISCORD-SERVER_WEBHOOK-URL&#39;;
+  const payload = JSON.stringify({content: message});
+  const params = {
+    headers: {
+      &#39;Content-Type&#39;: &#39;application/json&#39;
+    },
+    method: &#34;POST&#34;,
+    payload: payload,
+    muteHttpExceptions: true
+  };
+
+  const response = UrlFetchApp.fetch(discordUrl, params);
+  Logger.log(response.getContentText());
+
+}
+</code></pre><h3 id="3-c列に相談中回答済と入力する">3. C列に「相談中」「回答済」と入力する</h3>
+<p>Discordに通知が飛びます。</p>
+
+    </article>
+  </section>
+
+  <footer>
+  <div>
+    <p class="f6 gray mt6 lh-copy">
+      © 2023 <a href='https://twitter.com/talebujp' target='_blank'>@talebujp</a>.
+    </p>
+  </div>
+</footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>

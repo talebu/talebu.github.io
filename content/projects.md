@@ -16,6 +16,11 @@ draft: false
     - グラフによるデータの可視化なども可能です
     - 利用技術: Angular (TypeScript)
 
+- ***Googleスプレッドシート/Discord連携*** [[guide]](/posts/gas-discord-integration)
+    - Googleスプレッドシートを更新するとDiscordに自動で通知が飛ぶ仕組み
+    - 他のチャットサービスでももちろん可能です
+    - 利用技術：JavaScript
+
 *ゲーム*
 - ***Flee Paris（逃げパリ）*** [[file]](/Flee_Paris.apk)
     - Android用ゲームアプリ。警官に見つかってはいけません

@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>© 2023 &lt;a href=&#39;https://twitter.com/talebujp&#39; target=&#39;_blank&#39;&gt;@talebujp&lt;/a&gt;.</copyright>
-    <lastBuildDate>Mon, 27 Mar 2023 15:59:35 +0900</lastBuildDate><atom:link href="talebu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 17:36:07 +0900</lastBuildDate><atom:link href="talebu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>スプレッドシートを更新すると自動でDiscordに通知が飛ぶ仕組み</title>
+      <link>talebu.github.io/posts/gas-discord-integration/</link>
+      <pubDate>Mon, 01 May 2023 17:36:07 +0900</pubDate>
+      
+      <guid>talebu.github.io/posts/gas-discord-integration/</guid>
+      <description>Googleスプレッドシートで更新を行うとDiscordのチャンネルに通知が飛ぶ仕組みを紹介します。
+この例では、C列に「相談中」または「回答済」と入力することが通知を飛ばす条件です。
+条件の部分は適宜変更する必要があります。
+1. 更新通知を飛ばしたいDiscordのサーバでWebhookを作成 こちらを参考に。
+2. 更新を行うスプレッドシートのGASで以下のスクリプトを作成して保存 function onCellValueChange(e) { const url = &amp;#39;https://docs.google.com/spreadsheets/YOUR-SPREADSHEETSURL&amp;#39;; // 条件 if (e.range.getColumn() === 3) { if (e.value === &amp;#34;相談中&amp;#34;) { postMessageToDiscord(`🎾 相談を追加しました。\n ${url}`); } else if (e.value === &amp;#34;回答済&amp;#34;) { postMessageToDiscord(`🏉 回答を入力しました。\n ${url}`); } } } function postMessageToDiscord(message) { // WebhookURLを設定する const discordUrl = &amp;#39;https://discord.com/api/webhooks/YOUR-DISCORD-SERVER_WEBHOOK-URL&amp;#39;; const payload = JSON.stringify({content: message}); const params = { headers: { &amp;#39;Content-Type&amp;#39;: &amp;#39;application/json&amp;#39; }, method: &amp;#34;POST&amp;#34;, payload: payload, muteHttpExceptions: true }; const response = UrlFetchApp.</description>
+    </item>
+    
     <item>
       <title>サイトを開設しました</title>
       <link>talebu.github.io/posts/release-this-site/</link>
@@ -27,7 +40,7 @@
 ツール
 自動定期リマインド用LINEボット
 LINE Messaging APIを利用した、LINE上でのリマインダー 部署や家族間での定期リマインドの自動化が可能です 利用技術: Python, AWS Lambda, Amazon EventBridge タスク管理ダッシュボード [url]
-Webのダッシュボードアプリ グラフによるデータの可視化なども可能です 利用技術: Angular (TypeScript) ゲーム
+Webのダッシュボードアプリ グラフによるデータの可視化なども可能です 利用技術: Angular (TypeScript) Googleスプレッドシート/Discord連携 Googleスプレッドシートを更新するとDiscordに自動で通知が飛ぶ仕組み 他のチャットサービスでももちろん可能です 利用技術：JavaScript ゲーム
 Flee Paris（逃げパリ） [file] Android用ゲームアプリ。警官に見つかってはいけません リンクからapkファイル（約92MB）をダウンロードして遊んでみてください 利用技術: Unity (C#) </description>
     </item>
     
